@@ -2,8 +2,6 @@
     font-size: 15px;
     font-weight: 700;
     color: rgb(78, 78, 78);
-    position: absolute;
-    top: 50%;
     filter: brightness(80%);
 }
 

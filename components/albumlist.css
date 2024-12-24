@@ -1,5 +1,5 @@
 #image-track > .image {
-    filter: brightness(30%);
+    filter: brightness(30%) blur(1px);
     width: 30vmin;
     height: 30vmin;
     object-fit: cover;
@@ -8,23 +8,45 @@
 }
 
 #image-track > .image:hover {
-    filter: brightness(100%);
-    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    filter: brightness(100%) blur(0);
+    transition: filter 0.4s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 7px 5px rgb(172, 172, 172);
 }
 
 
 #image-track {
     display: flex;
-    gap: 10px;
     position: absolute;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-inline: 20px;
+    padding-inline: 10px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    left: 43%;
+    width: 70vw;
+    height: 32vh;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-padding: 5px;
+    scroll-behavior: smooth;
+    left: 40%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-35%, -50%);
+}
+
+#image-track::-webkit-scrollbar {
+    height: 10px;
+}
+
+
+#image-track::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 90);/* Color of the scrollbar handle */
+    border-radius: 5px; /* Round edges of the scrollbar handle */
+}
+
+#image-track::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+#image-track::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); /* Color of the scrollbar track */
 }
 

@@ -14,6 +14,8 @@ export default function AlbumList() {
             <img className="image" src="/WLR.png" draggable="false"/>
             <img className="image" src="/Icedancer.jpg" draggable="false"/>
             <img className="image" src="/DS2.webp" draggable="false"/>
+            <img className="image" src="/TwoStar.webp" draggable="false"/>
+            <img className="image" src="/WhatWeHave.jpg" draggable="false"/>
         </div>
     );
 }
