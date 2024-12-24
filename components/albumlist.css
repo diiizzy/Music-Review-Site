@@ -1,0 +1,30 @@
+#image-track > .image {
+    filter: brightness(30%);
+    width: 30vmin;
+    height: 30vmin;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: none;
+}
+
+#image-track > .image:hover {
+    filter: brightness(100%);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 7px 5px rgb(172, 172, 172);
+}
+
+
+#image-track {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 43%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+

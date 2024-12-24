@@ -1,0 +1,14 @@
+.loraText {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(78, 78, 78);
+    position: absolute;
+    top: 50%;
+    filter: brightness(80%);
+}
+
+.loraText:hover {
+    color: white;
+    filter: brightness(100%) drop-shadow(3px 2px black);
+    transition: filter 1.5s ease;
+}
