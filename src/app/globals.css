@@ -5,3 +5,52 @@ body {
   overflow: hidden;
 }
 
+.playlist {
+  width: 50vmin;
+  height: 500px;
+}
+
+.albumtitle {
+  font-size: 2.0rem;
+  color: white;
+  
+}
+
+.artistname{
+  color: white;
+  font-size: 1.3rem;
+
+}
+
+.date {
+  color: white;
+}
+
+.review {
+  position: relative;
+  left: 25%;
+  width: 74vw;
+  height: 95vh;
+}
+
+.albuminfo {
+  position: absolute;
+}
+
+.reviewphoto {
+  height: 300px;
+  width: 300px;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.content {
+  color: white;
+}
+
+p {
+  margin-left: 5px;
+  line-height: 1.5rem;
+}
